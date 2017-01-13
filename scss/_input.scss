@@ -1,0 +1,27 @@
+::-webkit-input-placeholder {
+  //  font-family: 'Merriweather', serif;
+  font-family: monospace;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  //  font-family: 'Merriweather', serif;
+  font-family: monospace;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  //  font-family: 'Merriweather', serif;
+  font-family: monospace;
+}
+
+:-ms-input-placeholder {
+  //  font-family: 'Merriweather', serif;
+  font-family: monospace;
+}
+
+#inputArea {
+  width: 100%;
+  border: none;
+  // font-family: 'Merriweather', serif;
+  font-family: monospace;
+  font-size: 20px;
+}
