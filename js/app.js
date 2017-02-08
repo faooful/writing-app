@@ -1,6 +1,7 @@
 var inputField = document.getElementById("inputArea");
 var timer = document.getElementById("timer");
 var pause = document.getElementById("pauseTimer");
+var paused = false;
 
 //Button timers
 var twoMinutes = document.getElementById("twoMinutes");
@@ -9,6 +10,7 @@ var tenMinutes = document.getElementById("tenMinutes");
 
 timer.innerHTML = 'Get ready!';
 
+//timer function
 document.getElementById("startAgain").onclick = startAgain;
 function startAgain() {
   inputField.value = "";
@@ -31,7 +33,8 @@ var countDownTimer = function(timeRemaining) {
   }
 }
 
-pause.onclick = function() {
+//pause
+pause.onclick = function(timerPaused) {
   if (this.checked) {
     paused = true
     inputField.disabled = true;
@@ -44,6 +47,9 @@ pause.onclick = function() {
   }
 }
 
-twoMinutes.onclick = function() { countDownTimer(60); };
+//Changing parsing milliseconds
+
+//timer buttons
+twoMinutes.onclick = function() { countDownTimer(120); };
 fiveMinutes.onclick = function() { countDownTimer(300) };
 tenMinutes.onclick = function() { countDownTimer(600) };
