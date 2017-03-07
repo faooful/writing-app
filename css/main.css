@@ -17,10 +17,11 @@
   margin: 0 auto;
   border: none;
   font-family: monospace;
-  font-size: 20px; }
+  font-size: 20px;
+  overflow: auto; }
 
 section {
-  max-width: 900px;
+  max-width: 740px;
   margin: 0 auto; }
 
 #timer {
@@ -36,7 +37,7 @@ section {
 html {
   font-family: monospace; }
 
-textarea {
+.textarea {
   border: none;
   overflow: auto;
   outline: none;
@@ -44,5 +45,8 @@ textarea {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none; }
+
+[contentEditable=true]:empty:not(:focus):before {
+  content: attr(data-placeholder); }
 
 /*# sourceMappingURL=main.css.map */

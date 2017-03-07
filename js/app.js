@@ -25,7 +25,6 @@ var countDownTimer = function(timeRemaining) {
     console.log(timeRemaining);
     if (timeRemaining === 0) {
       inputField.disabled = true;
-      console.log('time is up')
     }
     else {
       setTimeout(function() { countDownTimer(timeRemaining - 1) }, 1000)
@@ -50,6 +49,6 @@ pause.onclick = function(timerPaused) {
 //Changing parsing milliseconds
 
 //timer buttons
-twoMinutes.onclick = function() { countDownTimer(120); };
+twoMinutes.onclick = function() { countDownTimer(2); };
 fiveMinutes.onclick = function() { countDownTimer(300) };
 tenMinutes.onclick = function() { countDownTimer(600) };
